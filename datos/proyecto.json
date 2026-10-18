@@ -1,0 +1,27 @@
+{
+  "equipo": [
+    {
+      "nombre": "Nicolás Emir Mejía Agreda",
+      "corto": "Nicolás",
+      "rol": "Desarrollo en Rust y Soroban",
+      "linkedin": "https://www.linkedin.com/in/nicolas-mejia-agreda/"
+    },
+    {
+      "nombre": "María Aguilera",
+      "corto": "María",
+      "rol": "",
+      "linkedin": "https://www.linkedin.com/in/mar%C3%ADa-aguilera-82a494381/"
+    }
+  ],
+  "entrevistas": {
+    "cantidad": 0,
+    "hallazgo": ""
+  },
+  "testnet": {
+    "estado": "maqueta",
+    "deposito": "",
+    "liberacion_30": "",
+    "liberacion_70": ""
+  },
+  "repo": "github.com/nema1502/qhatu"
+}
