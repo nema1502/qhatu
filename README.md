@@ -48,7 +48,7 @@ Qhatu cobraría entre 1% y 1,5% de cada trato, con un mínimo de 75 dólares. Es
 Somos dos.
 
 - [Nicolás Emir Mejía Agreda](https://www.linkedin.com/in/nicolas-mejia-agreda/): desarrollo en Rust y Soroban.
-- [María Aguilera](https://www.linkedin.com/in/mar%C3%ADa-aguilera-82a494381/)
+- [María Aguilera](https://www.linkedin.com/in/mar%C3%ADa-aguilera-82a494381/): marketing, comunicación y diseño. Coordina marketing en la Universidad del Valle, estudió Comunicación en la UAGRM y es Community Leader en Aspire Institute.
 
 ## Licencia
 

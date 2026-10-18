@@ -199,8 +199,14 @@ def etapa_guion():
     (RAIZ / "video" / "guion.md").write_text("\n".join(salida) + "\n", encoding="utf-8")
 
 
-ETAPAS = {"voz": etapa_voz, "laminas": etapa_laminas, "flujo": etapa_flujo,
-          "video": etapa_video, "mezcla": etapa_mezcla, "deck": etapa_deck, "guion": etapa_guion}
+def etapa_pptx():
+    """deck/qhatu-deck.pptx con las animaciones y las notas del orador."""
+    from produccion import armar_pptx
+    armar_pptx.main(TRABAJO)
+
+
+ETAPAS = {"voz": etapa_voz, "laminas": etapa_laminas, "flujo": etapa_flujo, "video": etapa_video,
+          "mezcla": etapa_mezcla, "deck": etapa_deck, "guion": etapa_guion, "pptx": etapa_pptx}
 
 if __name__ == "__main__":
     if not (MOTOR / "comun" / "estilo.py").is_file():

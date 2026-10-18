@@ -277,6 +277,7 @@ export const ARCHIVOS = [
   },
   {
     id: 'DESCARGAS', nivel: w,
+    excepto: /(^|\/)deck\//, // el PPTX del deck es un entregable
     re: /\.(?:zip|7z|rar|tar|gz|pptx|potx|docx|xlsx)$/i,
     msg: 'Archivo comprimido u ofimática',
     ayuda: '¿Tiene que estar en el repo?',

@@ -133,7 +133,7 @@ function auditarIdentidad(donde, nombre, correo) {
 
 function auditarRuta(ruta, bytes) {
   for (const regla of R.ARCHIVOS) {
-    if (regla.re.test(ruta)) registrar(regla, 'archivo', ruta, 0, ruta);
+    if (regla.re.test(ruta) && !(regla.excepto && regla.excepto.test(ruta))) registrar(regla, 'archivo', ruta, 0, ruta);
   }
   const mb = bytes / MB;
   if (mb > R.TAMANO.errorMB) {
