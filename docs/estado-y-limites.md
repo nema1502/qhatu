@@ -12,7 +12,7 @@ Qhatu está en etapa de idea y maqueta. Esta página dice qué existe de verdad,
 ## Qué no hay todavía
 
 - **No hay producto.** No hay contratos propios ni una aplicación funcionando.
-- **No hay transacciones reales en testnet.** La maqueta lo dice en pantalla. El primer paso es correr el flujo de punta a punta sobre el escrow de Trustless Work en la testnet de Stellar.
+- **No hay transacciones registradas en testnet.** La maqueta lo dice en pantalla. Hay un [demo](../scripts/testnet/demo.mjs) con balances reclamables nativos y XLM de prueba (sin Trustless Work ni USDC, y con la verificación de documentos simulada); hasta que se corra y se anoten sus hashes, no cuenta como transacción. El primer paso del producto es correr el flujo de punta a punta sobre el escrow de Trustless Work.
 - **No hicimos entrevistas formales.** La evidencia de hoy sale de fuentes públicas (prensa, datos del BCB, informes del Banco Asiático de Desarrollo). Está dicho en la lámina de validación.
 - **No hay acuerdo con Pollar ni con Trustless Work.** Los usamos como piezas abiertas; no somos sus socios.
 - **Las cifras de ingresos son hipótesis**, no mediciones.
