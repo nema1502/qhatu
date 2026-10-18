@@ -32,10 +32,11 @@ Qhatu nunca controla la plata. Más en [estado y límites](docs/estado-y-limites
 |---|---|
 | [`video/`](video/) | El video de 3 minutos, con voz y sin voz, y el guion con su tiempo |
 | [`deck/`](deck/) | El deck de 8 láminas en PDF y como imágenes |
-| [`docs/`](docs/) | Estado y límites, plan, guía para la defensa, cómo se hicieron las animaciones |
+| [`docs/`](docs/) | Estado y límites, plan, guía para la defensa, cómo se hicieron las animaciones y la [descripción lista para Stellar APEX](docs/descripcion-apex.md) |
 | [`animaciones/`](animaciones/) | Las láminas animadas: Manim (motor nemaxyz) y Remotion |
+| [`evidencia/`](evidencia/) | Carpeta de evidencia de entrevistas, con la plantilla y la guía de a quién entrevistar |
 | [`datos/`](datos/) | Equipo, entrevistas y transacciones de testnet. Cambiarlos regenera el deck y el video |
-| [`scripts/`](scripts/) | El [auditor](docs/auditor.md) de lo que se sube a GitHub |
+| [`scripts/`](scripts/) | El [auditor](docs/auditor.md) de lo que se sube a GitHub y el [demo de testnet](scripts/testnet/demo.mjs) del pago por hitos |
 
 La narración del video es una **voz sintética** (es-BO-MarceloNeural, de Microsoft Edge TTS). La versión sin voz, con solo música, es para exponerlo en vivo.
 
