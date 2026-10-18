@@ -1,0 +1,30 @@
+name: auditoria
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  auditar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: El auditor se prueba a sí mismo
+        run: node scripts/audit.mjs --autotest
+
+      - name: Auditar archivos, commits y texto del PR
+        run: node scripts/audit.mjs --ci
+        env:
+          AUDIT_BASE: ${{ github.event.before || github.event.pull_request.base.sha }}
+          PR_TITLE: ${{ github.event.pull_request.title }}
+          PR_BODY: ${{ github.event.pull_request.body }}

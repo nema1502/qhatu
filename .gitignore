@@ -1,0 +1,40 @@
+# dependencias y entornos
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+
+# secretos
+.env
+.env.*
+!.env.example
+
+# sistema y editores
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
+# renders intermedios (solo van los resultados finales a video/, deck/ y docs/)
+media/
+animaciones/**/out/
+animaciones/**/render/
+*.aux
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.toc
+*.out
+.mezcla_*
+
+# herramientas de IA: nunca al repo
+.claude/
+CLAUDE.md
+.cursor/
+.cursorrules
+.windsurfrules
+.aider*
+.continue/
+.codeium/
+GEMINI.md
+.github/copilot-instructions.md

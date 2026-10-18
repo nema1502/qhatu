@@ -1,0 +1,7 @@
+#!/bin/sh
+# Revisa el mensaje del commit y la identidad del autor.
+if ! command -v node >/dev/null 2>&1; then
+  echo "auditor: falta Node.js, así que no se puede revisar lo que subís." >&2
+  exit 1
+fi
+exec node "$(dirname "$0")/../scripts/audit.mjs" --msg "$1"
