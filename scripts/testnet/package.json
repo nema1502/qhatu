@@ -1,0 +1,8 @@
+{
+  "name": "qhatu-testnet",
+  "private": true,
+  "type": "module",
+  "description": "Demo de pago por hitos en la testnet de Stellar",
+  "scripts": { "demo": "node demo.mjs", "dry": "node demo.mjs --dry" },
+  "dependencies": { "@stellar/stellar-sdk": "^13.3.0" }
+}

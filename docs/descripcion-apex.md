@@ -2,7 +2,7 @@
 
 Texto para pegar en el campo **Description** del proyecto en stellarapex.org, con los títulos de la plantilla de la guía del participante. Track: **Pagos y remesas**. Project stage: **Idea**.
 
-Antes de pegar, reemplaza los tres textos entre llaves `{...}`: son datos que solo ustedes tienen (links públicos y, si las hicieron, las entrevistas).
+Antes de pegar, reemplaza el texto entre llaves `{...}` de `Entrevistas`: es un dato que solo ustedes tienen. Los links de Deck, Video y Evidencia apuntan a este repositorio, que es público. El link de Evidencia solo funciona cuando la carpeta `evidencia/` esté en `main`; hasta entonces apunta a la rama de trabajo.
 
 ## Campos sueltos de APEX
 
@@ -34,23 +34,35 @@ Entrevistas ({N}):
 Equipo y plan:
 Nicolás Emir Mejía Agreda: desarrollo en Rust y Soroban. María Aguilera: marketing, comunicación y diseño. Próximos pasos: demo de punta a punta en testnet sobre Trustless Work; piloto de 30 días con 3 tratos reales; luego mainnet. Estado, límites y riesgos dichos de frente (sin producto, sin transacciones, riesgo regulatorio en Bolivia): github.com/nema1502/qhatu/blob/main/docs/estado-y-limites.md
 
-Deck: {link público al deck, "cualquiera con el enlace puede ver"}
-Video: {link público al video de 3 minutos}
-Evidencia: https://github.com/nema1502/qhatu
-Testnet: (sin transacción todavía)
+Deck: https://github.com/nema1502/qhatu/blob/main/deck/qhatu-deck.pdf
+Video: https://github.com/nema1502/qhatu/blob/main/video/qhatu-pitch-3min.mp4
+Evidencia: https://github.com/nema1502/qhatu/tree/main/evidencia
+Testnet: (pega aquí el link que imprime el demo; si no lo corres, borra esta línea)
 ```
 
 ## Lista para antes de las 12:00
 
 La inscripción al evento en APEX cerró el sábado a las 12:00; el envío cierra hoy domingo a las 12:00.
 
-1. Sube `deck/qhatu-deck.pdf` a Drive y `video/qhatu-pitch-3min.mp4` a YouTube, Loom o Drive. Pon ambos en **cualquiera con el enlace puede ver** y ábrelos en una ventana de incógnito para comprobarlo.
-2. Pega esos dos links en `Deck:` y `Video:`.
+1. Abre en una ventana de incógnito los links de Deck y Video (ya están en la descripción) y comprueba que se ven sin iniciar sesión. Si prefieres Drive o YouTube, sube los archivos con **cualquiera con el enlace puede ver** y cambia los links.
+2. Para el bonus de +10, corre el demo de testnet (sección siguiente) y pega el link en `Testnet:`.
 3. Resuelve `Entrevistas`: no pongas un número que no sea real. Un 0 dicho con honestidad puntúa mejor que una cifra inventada, y el jurado puede preguntar.
 4. En APEX: My projects, abre el proyecto, pega el texto, guarda y confirma que Nicolás y María están en Members (cada persona participa en un solo proyecto).
 5. En la página de la ideatón: Choose your project, marca el proyecto en Your projects y elige el track **Pagos y remesas**.
-6. Si el repositorio es privado, hazlo público o el jurado no podrá abrir el link de Evidencia.
+6. El repositorio tiene que ser público; hoy lo es. Si lo cambian a privado, el jurado no podrá abrir ningún link.
 7. Dudas: Diego, WhatsApp o Telegram 77701350.
+
+## Bonus de testnet (+10): 3 minutos en tu computador
+
+El entorno donde se preparó esto no alcanza la testnet, así que el demo está probado solo en modo `--dry` (arma las transacciones sin enviarlas). Corre en tu máquina, con Node 22 o más nuevo:
+
+```bash
+cd scripts/testnet
+npm install
+node demo.mjs
+```
+
+Crea dos cuentas de prueba, deposita 100 XLM de prueba en dos balances reclamables (30% y 70%) y los libera al vendedor hito por hito. Imprime la línea `Testnet:` con el link del explorador y guarda los hashes en `datos/testnet-resultado.json`. Es honesto decir en la descripción que es una demo con balances reclamables nativos y XLM de prueba, sin el escrow de Trustless Work ni USDC todavía, y con la verificación de documentos simulada.
 
 ## Cumplimiento de la guía (revisado)
 
@@ -60,8 +72,8 @@ La inscripción al evento en APEX cerró el sábado a las 12:00; el envío cierr
 | Video pitch | 3 minutos | `video/qhatu-pitch-3min.mp4`: 2:47, con voz y sin voz |
 | Problema, solución, Stellar, negocio | Obligatorio | Texto listo arriba |
 | Entrevistas | Meta de 5 | Pendiente: hoy hay 0 formales (ver `datos/proyecto.json`) |
-| Evidencia de entrevistas | Link a carpeta | Pendiente: depende de las entrevistas |
+| Evidencia de entrevistas | Link a carpeta | Carpeta `evidencia/` con plantilla y guía; faltan las entrevistas |
 | Equipo y plan | Recomendado | Texto listo arriba y en [plan](plan.md) |
-| Testnet | Opcional, +10 | Sin transacción todavía; el entorno donde se preparó esto no alcanzaba la testnet |
+| Testnet | Opcional, +10 | Demo listo en `scripts/testnet/`; falta correrlo en tu máquina |
 
 Para regenerar el deck y el video hace falta el motor privado `nemaxyz-motor`, que no está en este repo (ver [animaciones](animaciones.md)). Nada del proyecto usa LaTeX.
