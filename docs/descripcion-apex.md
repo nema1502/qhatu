@@ -2,7 +2,7 @@
 
 Texto para pegar en el campo **Description** del proyecto en stellarapex.org, con los títulos de la plantilla de la guía del participante. Track: **Pagos y remesas**. Project stage: **Idea**.
 
-Antes de pegar, reemplaza el texto entre llaves `{...}` de `Entrevistas`: es un dato que solo ustedes tienen. Los links de Deck, Video y Evidencia apuntan a este repositorio, que es público. El link de Evidencia solo funciona cuando la carpeta `evidencia/` esté en `main`; hasta entonces apunta a la rama de trabajo.
+Se pega tal cual. Los links de Deck, Video y Evidencia apuntan a este repositorio, que es público. Si corren el demo de testnet, agreguen al final la línea `Testnet:` con el link que imprime. Si hacen entrevistas, cambien el 0 y el párrafo de `Entrevistas`.
 
 ## Campos sueltos de APEX
 
@@ -28,16 +28,15 @@ El escrow es no custodial y programable, la liquidación tarda segundos y el USD
 Modelo de negocio:
 Comisión de 1% a 1,5% por trato, con un mínimo de 75 dólares. Es del mismo orden que una carta de crédito (0,75% a 3% según guías públicas de bancos); la ventaja que buscamos es el acceso y la rapidez, no el precio. El escrow de Trustless Work cobra 0,3% por operación. Las cifras de ingresos son hipótesis que se validan en un piloto de 30 días con 3 tratos reales.
 
-Entrevistas ({N}):
-{Si hicieron entrevistas: con quién hablaron y qué aprendieron, una línea por persona. Si no hicieron ninguna: "Todavía no hicimos entrevistas formales. La evidencia de hoy sale de fuentes públicas (BCB, Banco Asiático de Desarrollo, prensa) y el plan de validación son 15 entrevistas a exportadores y 5 a despachantes, con criterios de abandono definidos en el repositorio."}
+Entrevistas (0):
+Todavía no hicimos entrevistas formales y no vamos a inventar ninguna. La evidencia de hoy sale de fuentes públicas (BCB, Banco Asiático de Desarrollo, prensa). El plan de validación son 15 entrevistas a exportadores e importadores pymes y 5 a despachantes, con la plantilla y los criterios de abandono ya escritos en el repositorio (carpeta evidencia/ y docs/plan.md). Si al corte de noviembre menos de 5 de 15 tuvieron una pérdida o disputa con un proveedor, o menos de 3 pagarían 1% o más, abandonamos o cambiamos de rumbo.
 
 Equipo y plan:
 Nicolás Emir Mejía Agreda: desarrollo en Rust y Soroban. María Aguilera: marketing, comunicación y diseño. Próximos pasos: demo de punta a punta en testnet sobre Trustless Work; piloto de 30 días con 3 tratos reales; luego mainnet. Estado, límites y riesgos dichos de frente (sin producto, sin transacciones, riesgo regulatorio en Bolivia): github.com/nema1502/qhatu/blob/main/docs/estado-y-limites.md
 
 Deck: https://github.com/nema1502/qhatu/blob/main/deck/qhatu-deck.pdf
 Video: https://github.com/nema1502/qhatu/blob/main/video/qhatu-pitch-3min.mp4
-Evidencia: https://github.com/nema1502/qhatu/tree/main/evidencia
-Testnet: (pega aquí el link que imprime el demo; si no lo corres, borra esta línea)
+Evidencia: https://github.com/nema1502/qhatu/tree/claude/clever-babbage-1i55jl/evidencia
 ```
 
 ## Lista para antes de las 12:00
