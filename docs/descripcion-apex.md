@@ -36,7 +36,7 @@ Nicolás Emir Mejía Agreda: desarrollo en Rust y Soroban. María Aguilera: mark
 
 Deck: https://github.com/nema1502/qhatu/blob/main/deck/qhatu-deck.pdf
 Video: https://github.com/nema1502/qhatu/blob/main/video/qhatu-pitch-3min.mp4
-Evidencia: https://github.com/nema1502/qhatu/tree/claude/clever-babbage-1i55jl/evidencia
+Evidencia: https://github.com/nema1502/qhatu/tree/main/evidencia
 ```
 
 ## Lista para antes de las 12:00
